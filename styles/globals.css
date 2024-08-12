@@ -57,4 +57,16 @@ body {
   }
 }
 
+.ticket {
+  @apply border border-gray-800 p-4 mx-auto max-w-xs text-center;
+}
+.header {
+  @apply text-xl font-bold;
+}
+.ticket-number {
+  @apply text-4xl font-bold my-4;
+}
+.footer {
+  @apply text-sm text-gray-600;
+}
 
