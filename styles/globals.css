@@ -31,5 +31,30 @@ body {
     text-wrap: balance;
   }
 }
+@media print {
+  body * {
+    visibility: hidden; /* Sembunyikan semua konten */
+    margin: 0;
+  }
+
+  #printable-ticket, #printable-ticket * {
+    visibility: visible; /* Tampilkan hanya area tiket */
+  }
+  .print-hidden {
+    display: none;
+  }
+
+  .print-visible {
+    display: block;
+  }
+
+  #printable-ticket {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
 
 
